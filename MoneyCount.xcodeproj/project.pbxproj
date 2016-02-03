@@ -13,8 +13,10 @@
 		204424FF1C60010000C21087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204424FD1C60010000C21087 /* Main.storyboard */; };
 		204425011C60010000C21087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204425001C60010000C21087 /* Assets.xcassets */; };
 		204425041C60010000C21087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204425021C60010000C21087 /* LaunchScreen.storyboard */; };
-		2044250F1C60010000C21087 /* MoneyCountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2044250E1C60010000C21087 /* MoneyCountTests.m */; };
 		2044251A1C60010000C21087 /* MoneyCountUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 204425191C60010000C21087 /* MoneyCountUITests.m */; };
+		204425281C6001DB00C21087 /* EuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 204425271C6001DB00C21087 /* EuroTests.m */; };
+		2044252F1C6002B800C21087 /* APEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2044252E1C6002B800C21087 /* APEuro.m */; };
+		204425301C6002B800C21087 /* APEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2044252E1C6002B800C21087 /* APEuro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +48,13 @@
 		204425031C60010000C21087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		204425051C60010000C21087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2044250A1C60010000C21087 /* MoneyCountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyCountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2044250E1C60010000C21087 /* MoneyCountTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyCountTests.m; sourceTree = "<group>"; };
 		204425101C60010000C21087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		204425151C60010000C21087 /* MoneyCountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyCountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		204425191C60010000C21087 /* MoneyCountUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyCountUITests.m; sourceTree = "<group>"; };
 		2044251B1C60010000C21087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204425271C6001DB00C21087 /* EuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EuroTests.m; sourceTree = "<group>"; };
+		2044252D1C6002B800C21087 /* APEuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APEuro.h; sourceTree = "<group>"; };
+		2044252E1C6002B800C21087 /* APEuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APEuro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		204424F31C60010000C21087 /* MoneyCount */ = {
 			isa = PBXGroup;
 			children = (
+				204425291C60027000C21087 /* Models */,
 				204424F71C60010000C21087 /* AppDelegate.h */,
 				204424F81C60010000C21087 /* AppDelegate.m */,
 				204424FA1C60010000C21087 /* ViewController.h */,
@@ -125,7 +130,7 @@
 		2044250D1C60010000C21087 /* MoneyCountTests */ = {
 			isa = PBXGroup;
 			children = (
-				2044250E1C60010000C21087 /* MoneyCountTests.m */,
+				208A57D51C62A2EA0091D424 /* Models */,
 				204425101C60010000C21087 /* Info.plist */,
 			);
 			path = MoneyCountTests;
@@ -138,6 +143,23 @@
 				2044251B1C60010000C21087 /* Info.plist */,
 			);
 			path = MoneyCountUITests;
+			sourceTree = "<group>";
+		};
+		204425291C60027000C21087 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2044252D1C6002B800C21087 /* APEuro.h */,
+				2044252E1C6002B800C21087 /* APEuro.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		208A57D51C62A2EA0091D424 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				204425271C6001DB00C21087 /* EuroTests.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +295,7 @@
 				204424FC1C60010000C21087 /* ViewController.m in Sources */,
 				204424F91C60010000C21087 /* AppDelegate.m in Sources */,
 				204424F61C60010000C21087 /* main.m in Sources */,
+				2044252F1C6002B800C21087 /* APEuro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2044250F1C60010000C21087 /* MoneyCountTests.m in Sources */,
+				204425281C6001DB00C21087 /* EuroTests.m in Sources */,
+				204425301C6002B800C21087 /* APEuro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +520,7 @@
 				204425201C60010000C21087 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		204425211C60010000C21087 /* Build configuration list for PBXNativeTarget "MoneyCountTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +529,7 @@
 				204425231C60010000C21087 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		204425241C60010000C21087 /* Build configuration list for PBXNativeTarget "MoneyCountUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +538,7 @@
 				204425261C60010000C21087 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
