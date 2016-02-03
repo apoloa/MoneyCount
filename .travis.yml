@@ -1,4 +1,4 @@
 language: objective-c
-before_install:
-    - brew update
-script: xctool -project MoneyCount.xcodeproj -scheme MoneyCount test
+script:
+  - xctool -workspace MoneyCount.xcworkspace -scheme MoneyCount -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -workspace MoneyCount.xcworkspace -scheme MoneyCountTest -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
