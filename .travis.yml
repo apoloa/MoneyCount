@@ -1,4 +1,5 @@
-language: objective-c
-script:
-  - xctool -workspace MoneyCount.xcworkspace -scheme MoneyCount -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool test -workspace MoneyCount.xcworkspace -scheme MoneyCountTest -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+language: objective-c  #1
+osx_image: xcode7.2 #2
+xcode_project: MoneyCount.xcodeproj #3
+xcode_scheme: MoneyCount #4
+xcode_sdk: iphonesimulator9.2 #5
