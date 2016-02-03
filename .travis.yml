@@ -1,3 +1,5 @@
 language: objective-c
-xcode_project: MoneyCount.xcodeproj 
-zcode_scheme: MoneyCountTest
+before_install:
+    - brew update
+    - brew install xctool
+script: xctool -project MoneyCount.xcodeproj -scheme MoneyCount test
