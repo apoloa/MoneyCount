@@ -18,7 +18,7 @@
     APEuro *five =[[APEuro alloc] initWithAmount: 5];
     APEuro *total = [five times:2];
     
-    XCTAssertEqual(15, total.amount, @"5*2 should be 10");
+    XCTAssertEqual(10, total.amount, @"5*2 should be 10");
 }
 
 @end
