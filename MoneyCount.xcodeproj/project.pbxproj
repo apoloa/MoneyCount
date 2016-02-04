@@ -17,6 +17,9 @@
 		204425281C6001DB00C21087 /* EuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 204425271C6001DB00C21087 /* EuroTests.m */; };
 		2044252F1C6002B800C21087 /* APEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2044252E1C6002B800C21087 /* APEuro.m */; };
 		204425301C6002B800C21087 /* APEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2044252E1C6002B800C21087 /* APEuro.m */; };
+		2048E7021C62D9CF00AE1148 /* DollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2048E7011C62D9CF00AE1148 /* DollarTest.m */; };
+		2048E7051C62DA7C00AE1148 /* APDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2048E7041C62DA7C00AE1148 /* APDollar.m */; };
+		2048E7061C62DA8C00AE1148 /* APDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2048E7041C62DA7C00AE1148 /* APDollar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		204425271C6001DB00C21087 /* EuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EuroTests.m; sourceTree = "<group>"; };
 		2044252D1C6002B800C21087 /* APEuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APEuro.h; sourceTree = "<group>"; };
 		2044252E1C6002B800C21087 /* APEuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APEuro.m; sourceTree = "<group>"; };
+		2048E7011C62D9CF00AE1148 /* DollarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarTest.m; sourceTree = "<group>"; };
+		2048E7031C62DA7C00AE1148 /* APDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDollar.h; sourceTree = "<group>"; };
+		2048E7041C62DA7C00AE1148 /* APDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDollar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,8 @@
 			children = (
 				2044252D1C6002B800C21087 /* APEuro.h */,
 				2044252E1C6002B800C21087 /* APEuro.m */,
+				2048E7031C62DA7C00AE1148 /* APDollar.h */,
+				2048E7041C62DA7C00AE1148 /* APDollar.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				204425271C6001DB00C21087 /* EuroTests.m */,
+				2048E7011C62D9CF00AE1148 /* DollarTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -295,6 +304,7 @@
 				204424FC1C60010000C21087 /* ViewController.m in Sources */,
 				204424F91C60010000C21087 /* AppDelegate.m in Sources */,
 				204424F61C60010000C21087 /* main.m in Sources */,
+				2048E7051C62DA7C00AE1148 /* APDollar.m in Sources */,
 				2044252F1C6002B800C21087 /* APEuro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2048E7061C62DA8C00AE1148 /* APDollar.m in Sources */,
+				2048E7021C62D9CF00AE1148 /* DollarTest.m in Sources */,
 				204425281C6001DB00C21087 /* EuroTests.m in Sources */,
 				204425301C6002B800C21087 /* APEuro.m in Sources */,
 			);

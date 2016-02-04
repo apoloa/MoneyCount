@@ -1,18 +1,18 @@
 //
-//  APEuro.m
+//  APDollar.m
 //  MoneyCount
 //
-//  Created by Adrian Polo Alcaide on 01/02/16.
+//  Created by Adrian Polo Alcaide on 04/02/16.
 //  Copyright © 2016 Adrian Polo Alcaide. All rights reserved.
 //
 
-#import "APEuro.h"
+#import "APDollar.h"
 
-@interface APEuro()
-   @property (nonatomic) NSUInteger amount;
+@interface APDollar()
+@property (nonatomic) NSUInteger amount;
 @end
 
-@implementation APEuro
+@implementation APDollar
 
 -(id) initWithAmount:(NSUInteger) amount{
     if (self = [super init]) {
@@ -21,9 +21,9 @@
     return self;
 }
 -(instancetype) times:(NSUInteger) multiplier{
-    APEuro *newEuro = [[APEuro alloc] initWithAmount:self.amount * multiplier];
+    APDollar *newDollar = [[APDollar alloc] initWithAmount:self.amount * multiplier];
     
-    return newEuro;
+    return newDollar;
 }
 
 
