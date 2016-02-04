@@ -9,9 +9,7 @@
 #import "APEuro.h"
 
 @interface APEuro()
-
-@property (nonatomic) NSUInteger amount;
-
+   
 @end
 
 @implementation APEuro
@@ -32,7 +30,13 @@
 #pragma mark - Overwritten
 
 -(BOOL) isEqual:(id)object{
-    return [self amount] == [object amount];
+    if(self == object){
+        return true;
+    }
+    if([self class] == [object class]){
+        return [self amount] == [object amount];
+    }
+    return false;
 }
 
 @end
