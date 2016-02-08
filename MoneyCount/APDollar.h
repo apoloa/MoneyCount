@@ -10,7 +10,6 @@
 #import "APMoney.h"
 @interface APDollar : APMoney
 
--(id) initWithAmount:(NSUInteger) amount;
 -(instancetype) times:(NSUInteger) multiplier;
 
 @end

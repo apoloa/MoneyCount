@@ -70,6 +70,7 @@
 		205304BB1C6946520077D29B /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
 		205304BC1C6946520077D29B /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
 		205304BE1C6948780077D29B /* MoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTest.m; sourceTree = "<group>"; };
+		205304C11C694F210077D29B /* APMoney-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APMoney-Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +171,7 @@
 				2048E7041C62DA7C00AE1148 /* APDollar.m */,
 				205304B71C6944E20077D29B /* APMoney.h */,
 				205304B81C6944E20077D29B /* APMoney.m */,
+				205304C11C694F210077D29B /* APMoney-Private.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";

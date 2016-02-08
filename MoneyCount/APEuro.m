@@ -7,21 +7,12 @@
 //
 
 #import "APEuro.h"
-
-@interface APEuro()
-   @property (nonatomic) NSUInteger amount;
-@end
+#import "APMoney-Private.h"
 
 @implementation APEuro
 
--(id) initWithAmount:(NSUInteger) amount{
-    if (self = [super init]) {
-        _amount = amount;
-    }
-    return self;
-}
 -(instancetype) times:(NSUInteger) multiplier{
-    APEuro *newEuro = [[APEuro alloc] initWithAmount:self.amount * multiplier];
+    APEuro *newEuro = [[APEuro alloc] initWithAmount:[self.amount integerValue] * multiplier];
     
     return newEuro;
 }
@@ -29,14 +20,9 @@
 
 #pragma mark - Overwritten
 
--(BOOL) isEqual:(id)object{
-    if(self == object){
-        return true;
-    }
-    if([self class] == [object class]){
-        return [self amount] == [object amount];
-    }
-    return false;
-}
 
+
+-(NSUInteger) hash{
+    return [self.amount integerValue];
+}
 @end
