@@ -28,6 +28,7 @@
     APDollar *ten = [[APDollar alloc] initWithAmount:10];
     
     XCTAssertEqualObjects(total, ten, @"Equivalent objects should be equal");
+    XCTAssertFalse([total isEqual:five], @"Non equivalent objects should be not equal");
 }
 
 @end
