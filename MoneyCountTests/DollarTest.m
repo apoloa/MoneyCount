@@ -22,4 +22,12 @@
     XCTAssertEqualObjects(ten,total, @"$5 * 2 = $10");
 }
 
+-(void) testEquality{
+    APDollar *five = [[APDollar alloc] initWithAmount:5];
+    APDollar *total = [five times:2];
+    APDollar *ten = [[APDollar alloc] initWithAmount:10];
+    
+    XCTAssertEqualObjects(total, ten, @"Equivalent objects should be equal");
+}
+
 @end
