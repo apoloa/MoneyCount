@@ -20,10 +20,6 @@
     APEuro *total = [five times:2];
     
     XCTAssertEqualObjects(total, ten, @"5€ * 2 should be 10€");
-    
-    APEuro *fiveteen = [five times:3];
-    APEuro *compare = [[APEuro alloc] initWithAmount:15];
-    XCTAssertEqualObjects(compare, fiveteen, @"5*3 should be 15");
 }
 
 -(void) testEquality{
