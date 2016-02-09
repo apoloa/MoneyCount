@@ -61,4 +61,8 @@
     XCTAssertEqualObjects(@"USD", [[APMoney dollarWithAmount:1] currency], @"The currency of $ should be USD");
 }
 
+-(void) testSimpleAddition{
+    XCTAssertEqualObjects([[APMoney dollarWithAmount:5] plus: [APMoney dollarWithAmount:5]], [APMoney dollarWithAmount:10], @"$5 + $5 = $10");
+}
+
 @end

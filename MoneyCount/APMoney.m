@@ -35,9 +35,18 @@
     
     APMoney* newMoney = [[APMoney alloc]  initWithAmount:[self.amount integerValue] * multiplier
                                                 currency:self.currency];
-    
     return newMoney;
 }
+
+-(APMoney *) plus:(APMoney *)other{
+    
+    NSInteger totalAmount = [self.amount integerValue] + [other.amount integerValue];
+    
+    APMoney *total = [[APMoney alloc] initWithAmount:totalAmount currency:self.currency];
+    
+    return total;
+}
+
 
 #pragma mark - Overwritten
 
