@@ -10,6 +10,9 @@
 
 @interface APMoney : NSObject
 
++(id) euroWithAmount:(NSInteger) amount;
++(id) dollarWithAmount:(NSInteger) amount;
+
 -(id) initWithAmount:(NSUInteger) amount;
 -(instancetype) times:(NSUInteger) multiplier;
 

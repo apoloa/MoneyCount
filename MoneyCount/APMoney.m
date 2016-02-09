@@ -9,8 +9,18 @@
 #import "APMoney.h"
 #import "NSObject+GNUStepAddons.h"
 #import "APMoney-Private.h"
+#import "APEuro.h"
+#import "APDollar.h"
 
 @implementation APMoney
+
++(instancetype) euroWithAmount:(NSInteger) amount{
+    return [[APEuro alloc] initWithAmount:amount];
+}
+
++(instancetype) dollarWithAmount:(NSInteger) amount{
+    return [[APDollar alloc] initWithAmount:amount];
+}
 
 -(id) initWithAmount:(NSUInteger) amount{
     if (self = [super init]) {
