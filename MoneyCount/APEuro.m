@@ -17,12 +17,4 @@
     return newEuro;
 }
 
-
-#pragma mark - Overwritten
-
-
-
--(NSUInteger) hash{
-    return [self.amount integerValue];
-}
 @end
