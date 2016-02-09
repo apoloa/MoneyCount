@@ -31,8 +31,6 @@
     
     XCTAssertNotEqualObjects(ten, nil, @"Nil not should be equal");
     
-    XCTAssertNotEqualObjects(ten, @"10", @"Ten not should be equal");
-    
     XCTAssertEqualObjects(ten, total, @"Equivalent objects should be equal");
 }
 

@@ -10,6 +10,4 @@
 #import "APMoney.h"
 @interface APEuro : APMoney
 
--(instancetype) times:(NSUInteger) multiplier;
-
 @end

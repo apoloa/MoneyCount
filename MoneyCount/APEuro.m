@@ -11,10 +11,4 @@
 
 @implementation APEuro
 
--(instancetype) times:(NSUInteger) multiplier{
-    APEuro *newEuro = [[APEuro alloc] initWithAmount:[self.amount integerValue] * multiplier];
-    
-    return newEuro;
-}
-
 @end

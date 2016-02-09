@@ -28,25 +28,21 @@
     }
     return self;
 }
--(instancetype) times:(NSUInteger) multiplier{
+-(id) times:(NSUInteger) multiplier{
     
-    return [self subclassResponsability:_cmd];
+    APMoney* newMoney = [[APMoney alloc]  initWithAmount:[self.amount integerValue] * multiplier];
+    
+    return newMoney;
 }
 
 #pragma mark - Overwritten
 
 -(NSString *) description{
-    return [NSString stringWithFormat:@"<%@ %ld", [self class], (long)[self amount]];
+    return [NSString stringWithFormat:@"<%@ %ld>", [self class], (long)[self amount]];
 }
 
 -(BOOL) isEqual:(id)object{
-    if(self == object){
-        return true;
-    }
-    if([self class] == [object class]){
-        return [self amount] == [object amount];
-    }
-    return false;
+    return [self amount] == [object amount];
 }
 
 -(NSUInteger) hash{

@@ -14,6 +14,6 @@
 +(id) dollarWithAmount:(NSInteger) amount;
 
 -(id) initWithAmount:(NSUInteger) amount;
--(instancetype) times:(NSUInteger) multiplier;
+-(id) times:(NSUInteger) multiplier;
 
 @end

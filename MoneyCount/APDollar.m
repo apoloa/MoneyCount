@@ -13,10 +13,4 @@
 
 @implementation APDollar
 
--(instancetype) times:(NSUInteger) multiplier{
-    APDollar *newDollar = [[APDollar alloc] initWithAmount:[self.amount integerValue] * multiplier];
-    
-    return newDollar;
-}
-
 @end
