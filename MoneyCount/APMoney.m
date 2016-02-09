@@ -8,9 +8,10 @@
 
 #import "APMoney.h"
 #import "NSObject+GNUStepAddons.h"
-#import "APMoney-Private.h"
-#import "APEuro.h"
-#import "APDollar.h"
+
+@interface APMoney ()
+@property (nonatomic, strong) NSNumber* amount;
+@end
 
 @implementation APMoney
 
@@ -45,7 +46,12 @@
 }
 
 -(BOOL) isEqual:(id)object{
-    return [self amount] == [object amount];
+    if([self.currency isEqual:[object currency]]){
+        return [self amount] == [object amount];
+    }else{
+        return NO;
+    }
+    
 }
 
 -(NSUInteger) hash{

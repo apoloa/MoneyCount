@@ -14,12 +14,6 @@
 		204425011C60010000C21087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204425001C60010000C21087 /* Assets.xcassets */; };
 		204425041C60010000C21087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204425021C60010000C21087 /* LaunchScreen.storyboard */; };
 		2044251A1C60010000C21087 /* MoneyCountUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 204425191C60010000C21087 /* MoneyCountUITests.m */; };
-		204425281C6001DB00C21087 /* EuroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 204425271C6001DB00C21087 /* EuroTests.m */; };
-		2044252F1C6002B800C21087 /* APEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2044252E1C6002B800C21087 /* APEuro.m */; };
-		204425301C6002B800C21087 /* APEuro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2044252E1C6002B800C21087 /* APEuro.m */; };
-		2048E7021C62D9CF00AE1148 /* DollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2048E7011C62D9CF00AE1148 /* DollarTest.m */; };
-		2048E7051C62DA7C00AE1148 /* APDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2048E7041C62DA7C00AE1148 /* APDollar.m */; };
-		2048E7061C62DA8C00AE1148 /* APDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2048E7041C62DA7C00AE1148 /* APDollar.m */; };
 		205304B91C6944E20077D29B /* APMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 205304B81C6944E20077D29B /* APMoney.m */; };
 		205304BD1C6946520077D29B /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 205304BC1C6946520077D29B /* NSObject+GNUStepAddons.m */; };
 		205304BF1C6948780077D29B /* MoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 205304BE1C6948780077D29B /* MoneyTest.m */; };
@@ -59,18 +53,11 @@
 		204425151C60010000C21087 /* MoneyCountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyCountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		204425191C60010000C21087 /* MoneyCountUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyCountUITests.m; sourceTree = "<group>"; };
 		2044251B1C60010000C21087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		204425271C6001DB00C21087 /* EuroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EuroTests.m; sourceTree = "<group>"; };
-		2044252D1C6002B800C21087 /* APEuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APEuro.h; sourceTree = "<group>"; };
-		2044252E1C6002B800C21087 /* APEuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APEuro.m; sourceTree = "<group>"; };
-		2048E7011C62D9CF00AE1148 /* DollarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarTest.m; sourceTree = "<group>"; };
-		2048E7031C62DA7C00AE1148 /* APDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDollar.h; sourceTree = "<group>"; };
-		2048E7041C62DA7C00AE1148 /* APDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDollar.m; sourceTree = "<group>"; };
 		205304B71C6944E20077D29B /* APMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMoney.h; sourceTree = "<group>"; };
 		205304B81C6944E20077D29B /* APMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMoney.m; sourceTree = "<group>"; };
 		205304BB1C6946520077D29B /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
 		205304BC1C6946520077D29B /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
 		205304BE1C6948780077D29B /* MoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTest.m; sourceTree = "<group>"; };
-		205304C11C694F210077D29B /* APMoney-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APMoney-Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,13 +152,8 @@
 		204425291C60027000C21087 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2044252D1C6002B800C21087 /* APEuro.h */,
-				2044252E1C6002B800C21087 /* APEuro.m */,
-				2048E7031C62DA7C00AE1148 /* APDollar.h */,
-				2048E7041C62DA7C00AE1148 /* APDollar.m */,
 				205304B71C6944E20077D29B /* APMoney.h */,
 				205304B81C6944E20077D29B /* APMoney.m */,
-				205304C11C694F210077D29B /* APMoney-Private.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -188,8 +170,6 @@
 		208A57D51C62A2EA0091D424 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				204425271C6001DB00C21087 /* EuroTests.m */,
-				2048E7011C62D9CF00AE1148 /* DollarTest.m */,
 				205304BE1C6948780077D29B /* MoneyTest.m */,
 			);
 			name = Models;
@@ -330,8 +310,6 @@
 				205304BD1C6946520077D29B /* NSObject+GNUStepAddons.m in Sources */,
 				204424F61C60010000C21087 /* main.m in Sources */,
 				205304B91C6944E20077D29B /* APMoney.m in Sources */,
-				2048E7051C62DA7C00AE1148 /* APDollar.m in Sources */,
-				2044252F1C6002B800C21087 /* APEuro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,12 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2048E7061C62DA8C00AE1148 /* APDollar.m in Sources */,
 				205304C01C69488C0077D29B /* APMoney.m in Sources */,
 				205304BF1C6948780077D29B /* MoneyTest.m in Sources */,
-				2048E7021C62D9CF00AE1148 /* DollarTest.m in Sources */,
-				204425281C6001DB00C21087 /* EuroTests.m in Sources */,
-				204425301C6002B800C21087 /* APEuro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
