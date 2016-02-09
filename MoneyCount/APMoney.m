@@ -14,23 +14,26 @@
 
 @implementation APMoney
 
-+(instancetype) euroWithAmount:(NSInteger) amount{
-    return [[APEuro alloc] initWithAmount:amount];
++(id) euroWithAmount:(NSInteger) amount{
+    return [[APMoney alloc] initWithAmount:amount currency:@"EUR"];
 }
 
-+(instancetype) dollarWithAmount:(NSInteger) amount{
-    return [[APDollar alloc] initWithAmount:amount];
++(id) dollarWithAmount:(NSInteger) amount{
+    return [[APMoney alloc] initWithAmount:amount currency:@"USD"];
 }
 
--(id) initWithAmount:(NSUInteger) amount{
+-(id) initWithAmount:(NSUInteger) amount
+            currency:(NSString *) currency{
     if (self = [super init]) {
         _amount = @(amount);
+        _currency = currency;
     }
     return self;
 }
 -(id) times:(NSUInteger) multiplier{
     
-    APMoney* newMoney = [[APMoney alloc]  initWithAmount:[self.amount integerValue] * multiplier];
+    APMoney* newMoney = [[APMoney alloc]  initWithAmount:[self.amount integerValue] * multiplier
+                                                currency:self.currency];
     
     return newMoney;
 }

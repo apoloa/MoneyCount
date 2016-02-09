@@ -14,10 +14,10 @@
 
 @implementation MoneyTest
 
--(void) testThatTimesRaiseException{
-    APMoney *money = [[APMoney alloc] initWithAmount:1];
+-(void) testCurrencies{
+    XCTAssertEqualObjects(@"EUR", [[APMoney euroWithAmount:1] currency], @"The currency of euros should be EUR");
     
-    XCTAssertThrows([money times:2], @"Should raise an exception");
+    XCTAssertEqualObjects(@"USD", [[APMoney dollarWithAmount:1] currency], @"The currency of $ should be USD");
 }
 
 @end
