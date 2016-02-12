@@ -18,6 +18,12 @@
 		205304BD1C6946520077D29B /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 205304BC1C6946520077D29B /* NSObject+GNUStepAddons.m */; };
 		205304BF1C6948780077D29B /* MoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 205304BE1C6948780077D29B /* MoneyTest.m */; };
 		205304C01C69488C0077D29B /* APMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 205304B81C6944E20077D29B /* APMoney.m */; };
+		20C5029D1C6DD54100BDD008 /* WalletTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C5029C1C6DD54100BDD008 /* WalletTest.m */; };
+		20C502A01C6DD77700BDD008 /* APWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C5029F1C6DD77700BDD008 /* APWallet.m */; };
+		20C502A11C6DD84F00BDD008 /* APWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C5029F1C6DD77700BDD008 /* APWallet.m */; };
+		20C54C6B1C6A9458003823EF /* BrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C54C6A1C6A9458003823EF /* BrokerTests.m */; };
+		20C54C6E1C6A9573003823EF /* APBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C54C6D1C6A9573003823EF /* APBroker.m */; };
+		20C54C6F1C6A9573003823EF /* APBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C54C6D1C6A9573003823EF /* APBroker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,12 @@
 		205304BB1C6946520077D29B /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
 		205304BC1C6946520077D29B /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
 		205304BE1C6948780077D29B /* MoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTest.m; sourceTree = "<group>"; };
+		20C5029C1C6DD54100BDD008 /* WalletTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletTest.m; sourceTree = "<group>"; };
+		20C5029E1C6DD77700BDD008 /* APWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APWallet.h; sourceTree = "<group>"; };
+		20C5029F1C6DD77700BDD008 /* APWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWallet.m; sourceTree = "<group>"; };
+		20C54C6A1C6A9458003823EF /* BrokerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokerTests.m; sourceTree = "<group>"; };
+		20C54C6C1C6A9573003823EF /* APBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBroker.h; sourceTree = "<group>"; };
+		20C54C6D1C6A9573003823EF /* APBroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBroker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +166,10 @@
 			children = (
 				205304B71C6944E20077D29B /* APMoney.h */,
 				205304B81C6944E20077D29B /* APMoney.m */,
+				20C54C6C1C6A9573003823EF /* APBroker.h */,
+				20C54C6D1C6A9573003823EF /* APBroker.m */,
+				20C5029E1C6DD77700BDD008 /* APWallet.h */,
+				20C5029F1C6DD77700BDD008 /* APWallet.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -171,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				205304BE1C6948780077D29B /* MoneyTest.m */,
+				20C54C6A1C6A9458003823EF /* BrokerTests.m */,
+				20C5029C1C6DD54100BDD008 /* WalletTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -306,10 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				204424FC1C60010000C21087 /* ViewController.m in Sources */,
+				20C54C6E1C6A9573003823EF /* APBroker.m in Sources */,
 				204424F91C60010000C21087 /* AppDelegate.m in Sources */,
 				205304BD1C6946520077D29B /* NSObject+GNUStepAddons.m in Sources */,
 				204424F61C60010000C21087 /* main.m in Sources */,
 				205304B91C6944E20077D29B /* APMoney.m in Sources */,
+				20C502A01C6DD77700BDD008 /* APWallet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +337,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C5029D1C6DD54100BDD008 /* WalletTest.m in Sources */,
+				20C54C6B1C6A9458003823EF /* BrokerTests.m in Sources */,
 				205304C01C69488C0077D29B /* APMoney.m in Sources */,
+				20C502A11C6DD84F00BDD008 /* APWallet.m in Sources */,
 				205304BF1C6948780077D29B /* MoneyTest.m in Sources */,
+				20C54C6F1C6A9573003823EF /* APBroker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

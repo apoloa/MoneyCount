@@ -7,11 +7,9 @@
 //
 
 #import "APMoney.h"
+#import "APBroker.h"
 #import "NSObject+GNUStepAddons.h"
 
-@interface APMoney ()
-@property (nonatomic, strong) NSNumber* amount;
-@end
 
 @implementation APMoney
 
@@ -31,14 +29,14 @@
     }
     return self;
 }
--(id) times:(NSUInteger) multiplier{
+-(id<APMoney>) times:(NSUInteger) multiplier{
     
     APMoney* newMoney = [[APMoney alloc]  initWithAmount:[self.amount integerValue] * multiplier
                                                 currency:self.currency];
     return newMoney;
 }
 
--(APMoney *) plus:(APMoney *)other{
+-(id<APMoney>) plus:(APMoney *)other{
     
     NSInteger totalAmount = [self.amount integerValue] + [other.amount integerValue];
     
@@ -47,11 +45,28 @@
     return total;
 }
 
+-(APMoney *) reduceToCurrency:(NSString *) currency
+                   withBroker:(APBroker*) broker{
+    APMoney *result;
+    double rate = [[broker.rates objectForKey:[broker keyFromCurrency:self.currency toCurrency:currency]] doubleValue];
+    if ([self.currency isEqual:currency]) {
+        result = self;
+    }else if(rate ==0 ){
+        [NSException raise:@"NoConversionRateException" format:@"Must have a conversion from %@ to %@", self.currency, currency];
+    }else{
+        NSInteger newAmount = [self.amount integerValue] *rate;
+        
+        result = [[APMoney alloc] initWithAmount:newAmount currency:currency];
+    }
+    
+    return result;
+}
+
 
 #pragma mark - Overwritten
 
 -(NSString *) description{
-    return [NSString stringWithFormat:@"<%@ %ld>", [self class], (long)[self amount]];
+    return [NSString stringWithFormat:@"<%@: %@ %@>", [self class], self.currency ,self.amount];
 }
 
 -(BOOL) isEqual:(id)object{
