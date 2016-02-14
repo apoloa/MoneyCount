@@ -37,7 +37,7 @@
     APMoney *reduced = [broker reduce:wallet toCurrency:@"USD"];
     
     
-    XCTAssertEqualObjects(reduced, [APMoney dollarWithAmount:100], @"40€ + 20$ = 100$ 2:1");
+    XCTAssertEqualObjects(reduced.description, [[APMoney dollarWithAmount:100] description], @"40€ + 20$ = 100$ 2:1");
 }
 
 - (void) testMoneyTypesCount{
@@ -53,7 +53,7 @@
     
     APMoney *money = [APMoney euroWithAmount:40];
     APMoney *result = [wallet sumForSameCurrency:@"EUR"];
-    XCTAssertEqualObjects(money, result, @"EUR 20 + EUR 20 --> EUR 40 ");
+    XCTAssertEqualObjects(money.description, result.description, @"EUR 20 + EUR 20 --> EUR 40 ");
 }
 
 
