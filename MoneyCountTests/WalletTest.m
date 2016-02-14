@@ -11,11 +11,11 @@
 #import "APMoney.h"
 #import "APBroker.h"
 #import "APWallet.h"
-@interface Wallet : XCTestCase
+@interface WalletTest : XCTestCase
 
 @end
 
-@implementation Wallet
+@implementation WalletTest
 
 - (void)setUp {
     [super setUp];
