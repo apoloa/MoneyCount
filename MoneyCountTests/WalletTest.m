@@ -26,18 +26,35 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
-/*
-- (void) additionWithReduction{
+
+- (void) testAdditionWithReduction{
     // 40€ + 20$ = 100$ 2:1
     APBroker *broker = [APBroker new];
-    [broker addRate:2 fromCurrency:@"USD" toCurrency:@"EUR"];
+    [broker addRate:2 fromCurrency:@"EUR" toCurrency:@"USD"];
     APWallet *wallet = [[APWallet alloc] initWithAmount:40 currency:@"EUR"];
     [wallet plus:[APMoney dollarWithAmount:20]];
     
     APMoney *reduced = [broker reduce:wallet toCurrency:@"USD"];
     
+    
     XCTAssertEqualObjects(reduced, [APMoney dollarWithAmount:100], @"40€ + 20$ = 100$ 2:1");
 }
- */
+
+- (void) testMoneyTypesCount{
+    APWallet *wallet = [[APWallet alloc] initWithAmount:20 currency:@"EUR"];
+    [wallet plus:[APMoney dollarWithAmount:20]];
+    
+    XCTAssertEqual(2, wallet.moneyTypes, @"EUR + USD --> 2 money types");
+}
+
+- (void) testSumForSameCurrency{
+    APWallet *wallet = [[APWallet alloc] initWithAmount:20 currency:@"EUR"];
+    [wallet plus:[APMoney euroWithAmount:20]];
+    
+    APMoney *money = [APMoney euroWithAmount:40];
+    APMoney *result = [wallet sumForSameCurrency:@"EUR"];
+    XCTAssertEqualObjects(money, result, @"EUR 20 + EUR 20 --> EUR 40 ");
+}
+
 
 @end

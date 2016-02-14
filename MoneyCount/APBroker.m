@@ -34,11 +34,8 @@
      toCurrency:(NSString*)toCurrency{
     
     [self.rates setObject:@(rate) forKey:[self keyFromCurrency:fromCurrency toCurrency:toCurrency]];
-    [self.rates setObject:@(1-rate) forKey:[self keyFromCurrency:toCurrency toCurrency:fromCurrency]];
+    [self.rates setObject:@(1/rate) forKey:[self keyFromCurrency:toCurrency toCurrency:fromCurrency]];
 }
-
-
-
 
 #pragma mark - Utils
 -(NSString*)keyFromCurrency:(NSString*)fromCurrency toCurrency:(NSString*)toCurrency{

@@ -38,7 +38,7 @@
 
 -(void) testReduction{
     //$10 == €5 2:1
-    [self.emptyBroker addRate: 0.5 fromCurrency:@"EUR" toCurrency:@"USD"];
+    [self.emptyBroker addRate: 2 fromCurrency:@"EUR" toCurrency:@"USD"];
     
     APMoney *dollars = [APMoney dollarWithAmount:10];
     APMoney *euros = [APMoney euroWithAmount:5];

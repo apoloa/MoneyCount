@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "APBroker.h"
+#import "APWalletTableViewController.h"
+#import "APWallet.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    APWallet *wallet = [[APWallet alloc] initWithAmount:10 currency:@"USD"];
+    [wallet plus:[APMoney dollarWithAmount:10]];
+    [wallet plus:[APMoney euroWithAmount:20]];
+    [wallet plus:[APMoney euroWithAmount:1]];
+    [wallet plus:[APMoney dollarWithAmount:4]];
+    
+    APBroker *broker = [APBroker new];
+    [broker addRate:2 fromCurrency:@"EUR" toCurrency:@"USD"];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.window.rootViewController = [[APWalletTableViewController alloc] initWithModel:wallet broker:broker];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
